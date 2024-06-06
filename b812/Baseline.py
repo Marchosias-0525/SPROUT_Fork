@@ -64,14 +64,3 @@ results_df.to_csv(r'K:\Programming\python\NeuralNetwork\SPROUT_Fork\b812\model\m
 
 # Display the results
 print(results_df)
-
-# Save the model performance
-results_df = pd.DataFrame(results).transpose()
-results_df.head()
-results_df.to_csv(r'K:\Programming\python\NeuralNetwork\SPROUT_Fork\data\model_evaluation_results.csv', index_label='k')
-
-# Display the results
-print(results_df)
-performance = pd.DataFrame({'Mean Squared Error': [mse], 'R^2 Score': [r2]})
-performance.to_csv('/mnt/data/baseline_model_performance_k2.csv', index=False)
-print('Saved baseline model performance to baseline_model_performance_k2.csv')
